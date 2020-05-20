@@ -1,0 +1,35 @@
+﻿<Page x:Class="Project_Zeus.single_AdmitPatientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project_Zeus"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="single_AdmitPatientPage">
+
+    <Grid>
+        <Label Content="Patient Name" HorizontalAlignment="Left" Margin="651,115,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="651,174,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label Content="Blood Group" HorizontalAlignment="Left" Margin="651,238,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label Content="Address" HorizontalAlignment="Left" Margin="651,297,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <TextBox x:Name="patient_ID" HorizontalAlignment="Left" TabIndex="1" Height="25" Margin="754,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" FontSize="14.667" />
+        <TextBox x:Name="patient_contact_no" HorizontalAlignment="Left" TabIndex="1" Height="25" Margin="754,0,0,512" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="156" FontSize="14.667" TextChanged="patient_contact_no_TextChanged"/>
+        <TextBox x:Name="patient_name" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="754,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" FontSize="14.667" TextChanged="patient_name_TextChanged"/>
+        <TextBox x:Name="patient_age" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="754,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" FontSize="14.667" TextChanged="patient_age_TextChanged"/>
+        <ComboBox Name="comboboxBloodGroup" IsEnabled="False" HorizontalAlignment="Left" Height="25" Margin="754,238,0,0" VerticalAlignment="Top" Width="90" FontSize="14.667" SelectionChanged="comboboxBloodGroup_SelectionChanged"/>
+        <TextBox x:Name="patient_address" IsEnabled="False" HorizontalAlignment="Left" Height="39" Margin="754,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" FontSize="14.667"/>
+        <TextBox Name="time_of_admission" IsEnabled="True" HorizontalAlignment="Left" Height="25" Margin="754,417,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" FontSize="14.667" />
+        <Button x:Name="button" Content="Register" HorizontalAlignment="Left" Margin="676,531,0,0" VerticalAlignment="Top" Width="144" Height="49"  FontSize="14.667" Click="button_Click"/>
+        <Label Content="Patient ID" HorizontalAlignment="Left" Margin="651,10,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Label  Content="Contact No" HorizontalAlignment="Left" Margin="651,58,0,0" VerticalAlignment="Top" FontSize="14.667"/>
+        <Button Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="49" Margin="852,531,0,0" VerticalAlignment="Top" Width="131" FontSize="14.667" Click="btnExit_Click"/>
+        <Label Content="Time of Admission" HorizontalAlignment="Left" Margin="601,412,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.594,-3.981" FontSize="14.667"/>
+
+        <DataGrid x:Name="DataGridDoc" HorizontalAlignment="Left" Height="491" Margin="8,-4,0,0" VerticalAlignment="Top" Width="586" SelectionChanged="DataGridDoc_SelectionChanged"/>
+
+
+
+
+    </Grid>
+</Page>
